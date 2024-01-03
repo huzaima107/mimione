@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">0</h1>
+
+    <div style="text-align: center">
+        <button id="btn1">increase</button>
+        <button id="btn2">clear</button>
+        <button id="btn3">decrease</button>
+    </div>
+
+    <script>
+        let count=0;
+        document.querySelector("#btn1").onclick=function(){
+            count+=2;
+            document.querySelector("#h1").innerHTML = count;
+        }
+        document.querySelector("#btn2").onclick=function(){
+            count=0;
+            document.querySelector("#h1").innerHTML = count;
+        }
+        document.querySelector("#btn3").onclick=function(){
+            count-=2;
+            document.querySelector("#h1").innerHTML = count;
+        }
+    </script>
+</body>
+</html>
